@@ -1,0 +1,211 @@
+body {
+    background-color: #303a47;
+    overflow: none;
+    margin: 0;
+}
+
+h1 {
+    font-size: 75px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    margin: 0;
+}
+
+h3 {
+    font-size: 12px;
+    margin: 0;
+}
+
+h4:nth-of-type(1) {
+    color: white;
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    padding: 0 0 0 50px;
+    margin: 200px 0 40px 0;
+    max-width: 500px;
+    border-bottom: 1px solid white;
+}
+
+h4:nth-of-type(2) {
+    color: white;
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    padding: 0 50px 0 0;
+    margin: 200px 0 40px 400px;
+    border-bottom: 1px solid white;
+}
+
+p:nth-of-type(1) {
+    color: white;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    padding: 0 50px 0 50px;
+    max-width: 500px;
+}
+
+p:nth-of-type(2) {
+    color: white;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    padding: 0 50px 0 400px;
+}
+
+.mega {
+    margin: 0;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 500px 0 0 0;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo-container {
+    text-align: center;
+    margin: 20px 0 0px 0;
+    height: 1700px;
+    min-width: 825px;
+}
+
+#car {
+    max-width: 900px;
+    min-width: 900px;
+    position: absolute;
+    top: 300px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+img {
+    opacity: 0;
+    max-width: 1000px;
+    min-width: 1000px;
+    position: absolute;
+    top: 105px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: fadein 1.5s ease forwards 7s;
+}
+
+.section2 {
+    height: 1200px;
+    background-image: url("./background1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+    background-color: rgb(224, 224, 224)
+}
+
+.section3 {
+    height: 1400px;
+    background-image: url("./background2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 4;
+    background-color: rgb(224, 224, 224)
+}
+
+.section4 {
+    height: 1400px;
+    background-image: url("./background3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    background-color: rgb(224, 224, 224)
+}
+
+.section5 {
+    height: 1330px;
+    background-image: url("./background4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    background-color: rgb(224, 224, 224)
+}
+
+
+
+
+
+
+
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+#car path:nth-child(1) {
+    stroke-dasharray: 3117.76px;
+    stroke-dashoffset: 3117.76px;
+    animation: logo-animate 3.5s linear forwards 3.5s;
+}
+
+#car path:nth-child(2) {
+    stroke-dasharray: 3117.76px;
+    stroke-dashoffset: 3117.76px;
+    animation: logo-animate 3.5s linear forwards 3.5s;
+}
+
+#car path:nth-child(3) {
+    stroke-dasharray: 5120.28px;
+    stroke-dashoffset: 5120.28px;
+    animation: logo-animate 3.5s linear forwards .5s;
+}
+
+
+@keyframes logo-animate {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes fill {
+    from {
+        fill: transparent;
+    }
+
+    to {
+        fill: #000000;
+    }
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
