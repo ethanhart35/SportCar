@@ -199,25 +199,15 @@ img {
 
 
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 595px) {
     img {
-        opacity: 0;
-        max-width: 400px;
-        min-width: 400px;
-        position: absolute;
-        top: 220px;
-        left: 50%;
-        transform: translateX(-50%);
-        animation: fadein 1.5s ease forwards 7s;
+        display: none;
     }
 
     #car {
-        max-width: 360px;
-        min-width: 360px;
-        position: absolute;
-        top: 300px;
-        left: 50%;
-        transform: translateX(-50%);
+        max-width: 90%;
+        min-width: 90%;
+        height: auto;
     }
 
     h4:nth-of-type(2) {
